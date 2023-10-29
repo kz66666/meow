@@ -1,0 +1,84 @@
+body {
+  background-image: url("");
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+                      "link1 link2 link3"
+                      ". image ."
+                      ". message .";
+  gap: 50px;
+}
+
+button {
+  height: 50px;
+}
+
+.gif-link {
+  grid-area: link1;
+}
+
+.meme-link {
+  grid-area: link2;
+}
+
+.cartoon-link {
+  grid-area: link3
+}
+
+.gif-button {
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.meme-button {
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.cartoon-button {
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: orange;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.cat {
+  grid-area: image;
+  width: 400px;
+}
+
+.message {
+  grid-area: message;
+  font-size: 40px;
+  font-style: bold;
+}
+
